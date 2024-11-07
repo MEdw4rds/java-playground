@@ -1,4 +1,3 @@
-
 // Vanilla JavaScript Function //------------------------------------------------------------
 
 // function addTwoNumbers(a,b) {
@@ -136,32 +135,81 @@
 
 //------------------------------------------------------------
 
-function findOutlier(integers) {
-    let evens = [];
-    let odds = [];
+// function findOutlier(integers) {
+//     let evens = [];
+//     let odds = [];
 
-    integers.forEach(a => {
-        if(a % 2 == 0) {
-            evens.push(a);
-        } else {
-            odds.push(a);
-        }
-    })
+//     integers.forEach(a => {
+//         if(a % 2 == 0) {
+//             evens.push(a);
+//         } else {
+//             odds.push(a);
+//         }
+//     })
 
-    if(evens.length == 1){
-        return evens[0]
-    } else if (odds.length == 1){
-        return odds[0]
-    }
-    return "The array has no outlier."
-}
+//     if(evens.length == 1){
+//         return evens[0]
+//     } else if (odds.length == 1){
+//         return odds[0]
+//     }
+//     return "The array has no outlier."
+// }
 
-console.log(findOutlier([0, 1, 2]));
-console.log(findOutlier([1, 2, 3]));
-console.log(findOutlier([2, 6, 8, 10, 3]));
-console.log(findOutlier([0, 0, 3, 0, 0]));
-console.log(findOutlier([1, 1, 0, 1, 1]));
+// console.log(findOutlier([0, 1, 2]));
+// console.log(findOutlier([1, 2, 3]));
+// console.log(findOutlier([2, 6, 8, 10, 3]));
+// console.log(findOutlier([0, 0, 3, 0, 0]));
+// console.log(findOutlier([1, 1, 0, 1, 1]));
 
 //------------------------------------------------------------
 
 
+// let arr = [2, 2, 2,2,2,1,2,2,2,2];
+
+// function stray(numbers) {
+//     let strayNum = numbers[0];
+
+//     if (strayNum !== numbers[1] && strayNum !== numbers[2]) return strayNum;
+
+//     for (let i = 1; i < numbers.length; ++i) {
+//         if (strayNum !== numbers[i]) return numbers[i];
+//     }
+// }
+
+// console.log(stray(arr))
+
+
+
+// function stray(numbers) {
+//     for (let i in numbers) {
+//         if (numbers.indexOf(numbers[i]) === numbers.lastIndexOf(numbers[i])) {
+//             return numbers[i]
+//         }
+//     }
+// }
+
+//------------------------------------------------------------
+
+
+// function SubtractSum(n) {
+//     let arr = (n + '').split('')
+//     let sum = 0;
+//     // console.log(arr)
+
+//     for(let i = 0; i < arr.length; i++){
+
+//         let num2 = parseInt(arr[i])
+//         sum = sum + num2; 
+//         console.log(sum)
+//     }
+
+//     while(sum - n > 100) {
+        
+//         let total = num2 - n;
+//         console.log(total);
+//         return total;
+//     } 
+
+// }
+
+// console.log(SubtractSum(1234))
