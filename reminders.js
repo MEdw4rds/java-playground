@@ -204,7 +204,7 @@
 //     }
 
 //     while(sum - n > 100) {
-        
+
 //         let total = num2 - n;
 //         console.log(total);
 //         return total;
@@ -213,3 +213,50 @@
 // }
 
 // console.log(SubtractSum(1234))
+
+//------------------------------------------------------------
+
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//     return mpg * fuelLeft >= distanceToPump ? true : false;
+// };
+
+// console.log(zeroFuel(100, 25, 2))
+
+
+//------------------------------------------------------------
+
+// function findAverage(array) {
+
+//     if (array.length === 0) {
+//         return 0;
+//     }
+
+//     let sum = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         sum += array[i]
+//     }
+//     return sum / array.length
+// }
+// console.log(findAverage([1, 1, 1]));
+
+// Or 
+
+// var find_average = (array) => {
+//     return array.length === 0 ? 0 : array.reduce((acc, ind) => acc + ind, 0) / array.length
+// }
+
+//------------------------------------------------------------
+
+// function maps(x) {
+//     return x.map((x)=> x * 2)
+// }
+
+// console.log(maps([4, 1, 1, 1, 4]))
+
+//------------------------------------------------------------
+
+// function sum(numbers) {
+//     return numbers.length === 0 ? 0 : numbers.reduce((acc, cv) => acc + cv, 0);
+// }
+
+//------------------------------------------------------------
