@@ -256,7 +256,17 @@
 //------------------------------------------------------------
 
 // function sum(numbers) {
-//     return numbers.length === 0 ? 0 : numbers.reduce((acc, cv) => acc + cv, 0);
+//     return numbers.reduce((a, b) => a + b, 0);
 // }
 
 //------------------------------------------------------------
+
+function result(answer){
+    switch(answer) {
+        case 0 < answer || 4 > answer:
+        return "Thor";
+        default:
+            return "Idk";
+    }
+}
+console.log(result(2))
